@@ -1,0 +1,21 @@
+MooseX::NaturalKey version 0.01
+===============================
+
+This module gives you classes which can define primary keys; during
+construction of the object, if another object with the same key
+already exists, it is returned instead of the newly created one.  See
+the POD for more.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+COPYRIGHT AND LICENCE
+
+See 
+
