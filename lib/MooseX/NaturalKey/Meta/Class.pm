@@ -65,7 +65,10 @@ sub make_cache_key {
 	} @$primary_key
 }
 
-override construct_instance => sub {
+our $method = $Class::MOP::VERSION > 0.80 ?
+	"_construct_instance" : "construct_instance";
+
+override $method => sub {
 	my ($class) = @_;
 
 	my $instance = super;

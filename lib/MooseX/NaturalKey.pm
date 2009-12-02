@@ -3,7 +3,7 @@ use Moose;
 use MooseX::NaturalKey::Meta::Class;
 use Sub::Exporter;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 sub primary {
 	shift if $_[0] eq "key";
@@ -175,6 +175,9 @@ welcome.
 
 =head1 BUGS
 
+MooseX::NaturalKey permits you to make objects with your own surrogate
+keys.
+
 All complex software has bugs lurking in it, and this module is no
 exception.  In fact, given the lack of test cases it's quite likely
 that something doesn't work.
@@ -191,7 +194,7 @@ but you win points for submitting in `git-format-patch` format.
 
 =head1 AUTHORS, COPYRIGHT AND LICENSE
 
-MooseX::NaturalKey version 0.01 is Copyright 2008, Sam Vilain
+MooseX::NaturalKey version 0.03 is Copyright 2008, 2009, Sam Vilain
 E<lt>samv@cpan.org<gt>.
 
 There may be some traces of code remaining from L<MooseX::Singleton>,

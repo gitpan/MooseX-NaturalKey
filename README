@@ -1,4 +1,4 @@
-MooseX::NaturalKey version 0.01
+MooseX::NaturalKey version 0.03
 ===============================
 
 This module gives you classes which can define primary keys; during
